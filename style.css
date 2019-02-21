@@ -27,7 +27,7 @@ h3 {
 }
 
 .button {
-  background-color: #ddd;
+  background-color: #222;
   border: none;
   color: black;
   padding: 16px 32px;
@@ -39,8 +39,20 @@ h3 {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+
 .button:hover {
   background-color: #908B86;
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
 }

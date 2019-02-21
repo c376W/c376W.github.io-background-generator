@@ -3,10 +3,15 @@ var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var button = document.getElementById("enter");
+var button1 = document.getElementById("enter1");
+var button2 = document.getElementById("enter2");
 
 setGradient();
 
 function setGradient() {
+	button1.style.background = color1.value;
+	button2.style.background = color2.value;
+
 	body.style.background = 
 	"linear-gradient(to right, " 
 	+ color1.value 
@@ -20,7 +25,6 @@ function setGradient() {
 	+ ", " 
 	+ color2.value 
 	+ ")";
-
 
 	css.textContent = body.style.background + ";";
 }
